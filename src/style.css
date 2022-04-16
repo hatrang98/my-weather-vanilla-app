@@ -1,7 +1,57 @@
-.weather {
-  border: 1px solid black;
-  margin-top: 15px;
+body {
+  background-color: rgb(229, 214, 229);
 }
-.container {
-  margin-top: 25px;
+.weather {
+  max-width: 700px;
+  border: 1px solid black;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: whitesmoke;
+}
+.city {
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+}
+.tittle {
+  text-align: center;
+  font-size: 30px;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+}
+ul {
+  text-align: left;
+  margin-left: 0px;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 0;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 13px;
+}
+.degree {
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.weather-icon {
+  font-size: 60px;
+}
+.code-source {
+  display: block;
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+.degree-transfer {
+  font-size: 25px;
+  position: relative;
+  top: -27px;
+  position: relative;
+  left: -7px;
+}
+.degreeF {
+  text-decoration: none;
+  color: #000;
 }
