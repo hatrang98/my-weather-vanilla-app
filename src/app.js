@@ -20,10 +20,12 @@ function showTime() {
   ];
   return `${days[day]} ${hour}: ${minute}`;
 }
+let tempC = null;
 function showTemp(response) {
   console.log(response.data);
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(response.data.main.temp);
+  tempC = response.data.main.temp;
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = response.data.name;
   let descriptionElement = document.querySelector("#description");
@@ -53,3 +55,28 @@ function enterCity(event) {
 }
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", enterCity);
+
+// degree conversion
+
+showCity("Hanoi");
+
+function showDegreeF(event) {
+  event.preventDefault();
+  let tempF = tempC * 1.8 + 32;
+  let degree = document.querySelector("#temp");
+  degree.innerHTML = Math.round(tempF);
+  degreeC.classList.remove("active");
+  degreeF.classList.add("active");
+}
+
+function showDegreeC(event) {
+  event.preventDefault();
+  let degree = document.querySelector("#temp");
+  degree.innerHTML = Math.round(tempC);
+  degreeC.classList.add("active");
+  degreeF.classList.remove("active");
+}
+let degreeF = document.querySelector("#degreeF");
+degreeF.addEventListener("click", showDegreeF);
+let degreeC = document.querrySelector("#degreeC");
+degreeC.addEventListener("click", showDegreeC);

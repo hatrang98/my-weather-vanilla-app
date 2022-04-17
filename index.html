@@ -17,7 +17,13 @@
   <body>
     <div class="container">
       <div class="weather">
-        <h1 class="tittle">Trang's Weather App</h1>
+        <h1 class="tittle">
+          <img
+            src="https://cdn.iconscout.com/icon/free/png-256/cloudy-weather-11-1147979.png"
+            alt=""
+            class="weather-icon"
+          />Trang's Weather App
+        </h1>
         <form action="" id="search-form" class="search-form">
           <div class="row">
             <div class="col-4">
@@ -51,9 +57,14 @@
               class="weather-icon"
               id="weather-icon"
             />
-            <span class="degree" id="temp">20</span
-            ><span class="degree-transfer">
-              ℃|<a href="" class="degreeF">℉</a></span
+            <span class="degree" id="temp"></span>
+            <span class="degree-transfer">
+              <a href="" class="degreeC active" id="degreeC">℃</a>|<a
+                href=""
+                class="degreeF"
+                id="degreeF"
+                >℉</a
+              ></span
             >
           </div>
         </div>
