@@ -1,4 +1,26 @@
 let city = "Hanoi";
+function showTime() {
+  let now = new Date();
+  let hour = now.getHours();
+  let day = now.getDay();
+  let minute = now.getMinutes();
+  if (minute < 10) {
+    minute = `0${minute}`;
+  }
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return `${days[day]} ${hour}: ${minute}`;
+}
 function showTemp(response) {
   console.log(response.data);
   let tempElement = document.querySelector("#temp");
@@ -11,6 +33,8 @@ function showTemp(response) {
   humidityElement.innerHTML = `Humidity: ${response.data.main.humidity} %`;
   let speedElement = document.querySelector("#speed");
   speedElement.innerHTML = response.data.wind.speed;
+  let timeElement = document.querySelector("#currentTime");
+  timeElement.innerHTML = showTime();
 }
 let apiKey = "634e0f286e83523b2a964bf9f5ac1617";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
