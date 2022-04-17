@@ -11,6 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -19,24 +20,25 @@
         <h1 class="tittle">Trang's Weather App</h1>
         <div class="row">
           <div class="col-6">
-            <h1 class="city" id="city">New York</h1>
+            <h1 class="city" id="city">City</h1>
             <ul>
-              <li>Friday 17:42</li>
-              <li>Clear sky</li>
-              <li>Humidity: 52%</li>
-              <li>Wind: 1.54 km/h</li>
+              <li id="currentTime">Current time</li>
+              <li id="description">Description</li>
+              <li id="humidity">Humidity</li>
+              <li>Winds: <span id="speed"></span> km/h</li>
             </ul>
           </div>
           <div class="col-6">
             <span class="weather-icon">🌤</span>
-            <span class="degree">11</span
+            <span class="degree" id="temp"></span
             ><span class="degree-transfer">
               ℃|<a href="" class="degreeF">℉</a></span
             >
           </div>
         </div>
         <small class="code-source"
-          >Coded by Trang Nguyen. <a href="">Open source</a></small
+          >Coded by Trang Nguyen.
+          <a href="" class="source">Open source</a></small
         >
       </div>
     </div>

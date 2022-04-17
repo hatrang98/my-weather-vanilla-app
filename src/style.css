@@ -28,6 +28,7 @@ li {
   margin: 0;
   color: rgba(39, 33, 66, 0.4);
   font-size: 13px;
+  text-transform: capitalize;
 }
 .degree {
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
@@ -43,6 +44,9 @@ li {
   display: block;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   text-align: center;
+}
+.source {
+  text-decoration: none;
 }
 .degree-transfer {
   font-size: 25px;
