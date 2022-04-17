@@ -1,4 +1,3 @@
-let city = "Hanoi";
 function showTime() {
   let now = new Date();
   let hour = now.getHours();
@@ -40,6 +39,17 @@ function showTemp(response) {
   let iconElement = document.querySelector("#weather-icon");
   iconElement.setAttribute("src", iconUrl);
 }
-let apiKey = "634e0f286e83523b2a964bf9f5ac1617";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(apiUrl).then(showTemp);
+
+// add search
+function showCity(city) {
+  let apiKey = "634e0f286e83523b2a964bf9f5ac1617";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemp);
+}
+function enterCity(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#enter-city");
+  showCity(cityInput.value);
+}
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", enterCity);

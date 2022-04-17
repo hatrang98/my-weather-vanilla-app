@@ -18,9 +18,25 @@
     <div class="container">
       <div class="weather">
         <h1 class="tittle">Trang's Weather App</h1>
+        <form action="" id="search-form" class="search-form">
+          <div class="row">
+            <div class="col-4">
+              <input
+                type="search"
+                placeholder="Enter a city"
+                class="enter-city"
+                id="enter-city"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-4" id="search-button">
+              <input type="submit" value="Search" class="search-button" />
+            </div>
+          </div>
+        </form>
         <div class="row">
           <div class="col-6">
-            <h1 class="city" id="city">City</h1>
+            <h1 class="city" id="city">Hanoi</h1>
             <ul>
               <li id="currentTime">Current time</li>
               <li id="description">Description</li>
@@ -30,12 +46,12 @@
           </div>
           <div class="col-6">
             <img
-              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonarchive.com%2Ftag%2Fweather&psig=AOvVaw1FI_42c1A71Q8w6vipPAVP&ust=1650282425127000&source=images&cd=vfe&ved=2ahUKEwiJ5Yyfg5v3AhWfzosBHQHFDqoQjRx6BAgAEAs"
-              alt="clear"
+              src="https://cdn.iconscout.com/icon/free/png-256/cloudy-weather-11-1147979.png"
+              alt=""
               class="weather-icon"
               id="weather-icon"
             />
-            <span class="degree" id="temp"></span
+            <span class="degree" id="temp">20</span
             ><span class="degree-transfer">
               ℃|<a href="" class="degreeF">℉</a></span
             >

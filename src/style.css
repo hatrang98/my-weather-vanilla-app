@@ -45,6 +45,7 @@ li {
   position: relative;
   left: -30px;
   top: -25px;
+  max-width: 60px;
 }
 .code-source {
   display: block;
@@ -64,4 +65,17 @@ li {
 .degreeF {
   text-decoration: none;
   color: #000;
+}
+.search-button {
+  text-align: left;
+  background-color: rgb(203, 192, 214);
+  border-radius: 5px;
+  border: none;
+}
+.enter-city {
+  border-radius: 4px;
+  text-align: 10px;
+}
+.search-form {
+  margin: 20px auto;
 }
