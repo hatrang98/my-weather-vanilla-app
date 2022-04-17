@@ -37,9 +37,14 @@ li {
   font-weight: 500;
   padding-right: 0px;
   margin-right: 0px;
+  position: relative;
+  left: -30px;
 }
 .weather-icon {
   font-size: 60px;
+  position: relative;
+  left: -30px;
+  top: -25px;
 }
 .code-source {
   display: block;
@@ -54,7 +59,7 @@ li {
   position: relative;
   top: -27px;
   position: relative;
-  left: -7px;
+  left: -25px;
 }
 .degreeF {
   text-decoration: none;

@@ -35,6 +35,10 @@ function showTemp(response) {
   speedElement.innerHTML = response.data.wind.speed;
   let timeElement = document.querySelector("#currentTime");
   timeElement.innerHTML = showTime();
+  //add icon
+  let iconUrl = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+  let iconElement = document.querySelector("#weather-icon");
+  iconElement.setAttribute("src", iconUrl);
 }
 let apiKey = "634e0f286e83523b2a964bf9f5ac1617";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
