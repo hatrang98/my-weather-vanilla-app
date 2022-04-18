@@ -78,5 +78,5 @@ function showDegreeC(event) {
 }
 let degreeF = document.querySelector("#degreeF");
 degreeF.addEventListener("click", showDegreeF);
-let degreeC = document.querrySelector("#degreeC");
+let degreeC = document.querySelector("#degreeC");
 degreeC.addEventListener("click", showDegreeC);
