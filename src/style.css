@@ -88,3 +88,8 @@ li {
 .active {
   color: #000;
 }
+.icon {
+  max-width: 50px;
+  position: relative;
+  top: -7px;
+}
