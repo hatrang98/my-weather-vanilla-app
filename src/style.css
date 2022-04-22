@@ -93,3 +93,26 @@ li {
   position: relative;
   top: -7px;
 }
+.forecast {
+  text-align: center;
+  margin: 20px;
+}
+.forecast-date {
+  font-size: 22px;
+}
+.forecast-icon {
+  font-size: 22px;
+}
+.temp-max {
+  font-size: 20px;
+}
+.temp-min {
+  font-size: 20px;
+  opacity: 0.7;
+}
+.forecast-eachDay {
+  margin: 0 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(229, 214, 229);
+}
