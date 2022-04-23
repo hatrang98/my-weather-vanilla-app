@@ -80,3 +80,26 @@ let degreeF = document.querySelector("#degreeF");
 degreeF.addEventListener("click", showDegreeF);
 let degreeC = document.querySelector("#degreeC");
 degreeC.addEventListener("click", showDegreeC);
+
+// add forecast
+let forecast = document.querySelector("#forecast");
+let forecastHTML = `<div class="row">`;
+let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+days.forEach(function (day) {
+  forecastHTML =
+    forecastHTML +
+    `<div class="col-2 forecast-eachDay">
+              <span class="forecast-date">${day}</span>
+              <br />
+              <img
+                src="https://cdn.iconscout.com/icon/free/png-256/cloudy-weather-11-1147979.png"
+                width="20px"
+                class="forecast-icon"
+              />
+              <br />
+              <span class="temp-max">20°</span>
+              <span class="temp-min">10°</span>
+            </div>`;
+});
+forecastHTML = forecastHTML + `</div>`;
+forecast.innerHTML = forecastHTML;

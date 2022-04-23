@@ -12,6 +12,7 @@ body {
 .city {
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   margin-bottom: 0;
+  margin-left: 10px;
 }
 .tittle {
   text-align: center;
@@ -20,7 +21,7 @@ body {
 }
 ul {
   text-align: left;
-  margin-left: 0px;
+  margin-left: 10px;
   padding: 0;
 }
 li {
@@ -78,12 +79,13 @@ li {
   top: 2px;
 }
 .enter-city {
+  border: 1px solid;
   border-radius: 4px;
   color: rgba(39, 33, 66, 0.4);
   padding: 5px;
 }
 .search-form {
-  margin: 20px auto;
+  margin: 20px 10px;
 }
 .active {
   color: #000;
@@ -99,15 +101,16 @@ li {
 }
 .forecast-date {
   font-size: 22px;
+  font-weight: 450;
 }
 .forecast-icon {
   font-size: 22px;
 }
 .temp-max {
-  font-size: 20px;
+  font-size: 18px;
 }
 .temp-min {
-  font-size: 20px;
+  font-size: 18px;
   opacity: 0.7;
 }
 .forecast-eachDay {
