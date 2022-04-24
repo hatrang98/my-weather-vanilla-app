@@ -1,5 +1,5 @@
-function showTime() {
-  let now = new Date();
+function showTime(timestamp) {
+  let now = new Date(timestamp * 1000);
   let hour = now.getHours();
   let day = now.getDay();
   let minute = now.getMinutes();
@@ -35,7 +35,7 @@ function showTemp(response) {
   let speedElement = document.querySelector("#speed");
   speedElement.innerHTML = response.data.wind.speed;
   let timeElement = document.querySelector("#currentTime");
-  timeElement.innerHTML = showTime();
+  timeElement.innerHTML = showTime(response.data.dt);
   //add icon
   let iconUrl = `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
   let iconElement = document.querySelector("#weather-icon");
