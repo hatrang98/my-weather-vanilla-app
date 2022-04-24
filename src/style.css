@@ -104,7 +104,7 @@ li {
   font-weight: 450;
 }
 .forecast-icon {
-  font-size: 22px;
+  max-width: 45px;
 }
 .temp-max {
   font-size: 18px;
