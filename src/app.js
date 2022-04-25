@@ -23,6 +23,8 @@ function showTime(timestamp) {
 let tempC = null;
 function showTemp(response) {
   console.log(response.data);
+  degreeC.classList.add("active");
+  degreeF.classList.remove("active");
   let tempElement = document.querySelector("#temp");
   tempElement.innerHTML = Math.round(response.data.main.temp);
   tempC = response.data.main.temp;
